@@ -3,8 +3,6 @@ services:
     - docker
 before_install:
     - docker build -t gauravkhedekar/react-app -f Dockerfile.dev .
-#script:
-#    - docker run -t gauravkhedekar/react-app npm run test -- --coverage
 deploy:
   provider: elasticbeanstalk
   access_key_id:
