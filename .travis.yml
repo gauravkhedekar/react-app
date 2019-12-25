@@ -3,6 +3,7 @@ services:
     - docker
 before_install:
     - docker build -t gauravkhedekar/react-app -f Dockerfile.dev .
+    - gem install bundler
 #script:
 #    - docker run gauravkhedekar/react-app npm run test -- --coverage
 deploy:
